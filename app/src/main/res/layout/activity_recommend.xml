@@ -1,0 +1,1201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/recommend_bg" />
+
+    <TextView
+        android:id="@+id/exitTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="Exit"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp"/>
+    <com.microsoft.payment.Common.CircleImageView
+        android:id="@+id/headImg"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="44dp"
+        app:border_color="#f15a24"
+        app:border_width="3dp" />
+
+    <LinearLayout
+        android:id="@+id/titleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/go_home"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/helloTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="@string/hello_someone"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/recomendTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/recommend_new"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/recomendLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/recomendImg1"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/thumbnail_3" />
+
+                <TextView
+                    android:id="@+id/recomendName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_margin"
+                    android:layout_toRightOf="@id/recomendImg1"
+                    android:fontFamily="sans-serif"
+                    android:text="hololens"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/smile1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName1"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/recomendImg1"
+                    android:src="@drawable/smileface" />
+
+                <TextView
+                    android:id="@+id/times1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/smile1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="36"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/times1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="times"
+                    android:textColor="#cacaca"
+                    android:textSize="9sp" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/realPrice1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_below="@id/smile1"-->
+                    <!--android:layout_marginLeft="29dp"-->
+                    <!--android:layout_marginTop="@dimen/real_price_margin_top"-->
+                    <!--android:layout_toRightOf="@id/recomendImg1"-->
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:text="$639.22"-->
+                    <!--android:textColor="#f15a24"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/originalPrice1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_alignBottom="@id/realPrice1"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_toRightOf="@id/realPrice1"-->
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:text="($799.00)"-->
+                    <!--android:textColor="#555555"-->
+                    <!--android:textSize="12sp" />-->
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recomendLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/recomendImg2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/thumbnail_3" />
+
+                <TextView
+                    android:id="@+id/recomendName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_margin"
+                    android:layout_toRightOf="@id/recomendImg2"
+                    android:fontFamily="sans-serif"
+                    android:text="hololens"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/smile2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName2"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/recomendImg2"
+                    android:src="@drawable/smileface" />
+
+                <TextView
+                    android:id="@+id/times2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/smile2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="36"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/times2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="times"
+                    android:textColor="#cacaca"
+                    android:textSize="9sp" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/realPrice2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_below="@id/smile2"-->
+                    <!--android:layout_marginLeft="29dp"-->
+                    <!--android:layout_marginTop="@dimen/real_price_margin_top"-->
+                    <!--android:layout_toRightOf="@id/recomendImg2"-->
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:text="$639.22"-->
+                    <!--android:textColor="#f15a24"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/originalPrice2"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_alignBottom="@id/realPrice2"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_toRightOf="@id/realPrice2"-->
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:text="($799.00)"-->
+                    <!--android:textColor="#555555"-->
+                    <!--android:textSize="12sp" />-->
+
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recomendLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/recomendImg3"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/thumbnail_3" />
+
+                <TextView
+                    android:id="@+id/recomendName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_margin"
+                    android:layout_toRightOf="@id/recomendImg3"
+                    android:fontFamily="sans-serif"
+                    android:text="hololens"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/smile3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName3"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@id/recomendImg3"
+                    android:src="@drawable/smileface" />
+
+                <TextView
+                    android:id="@+id/times3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/smile3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:text="36"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/recomendName3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/times3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="times"
+                    android:textColor="#cacaca"
+                    android:textSize="9sp" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/realPrice3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_below="@id/smile3"-->
+                    <!--android:layout_marginLeft="29dp"-->
+                    <!--android:layout_marginTop="@dimen/real_price_margin_top"-->
+                    <!--android:layout_toRightOf="@id/recomendImg3"-->
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:text="$639.22"-->
+                    <!--android:textColor="#f15a24"-->
+                    <!--android:textSize="18sp" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/originalPrice3"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_alignBottom="@id/realPrice3"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:layout_toRightOf="@id/realPrice3"-->
+                    <!--android:fontFamily="sans-serif"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:text="($799.00)"-->
+                    <!--android:textColor="#555555"-->
+                    <!--android:textSize="12sp" />-->
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:id="@+id/hotLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="25dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/recommend_hot"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/gift1"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg1"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc1" />
+
+                <TextView
+                    android:id="@+id/giftName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg1"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift I"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName1"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg1"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift2"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg2"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc2" />
+
+                <TextView
+                    android:id="@+id/giftName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg2"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift II"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName2"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg2"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift3"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg3"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc3" />
+
+                <TextView
+                    android:id="@+id/giftName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg3"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift III"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName3"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice3"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg3"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift4"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg4"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc4" />
+
+                <TextView
+                    android:id="@+id/giftName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg4"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift IV"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName4"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg4"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice4"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice4"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg4"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift5"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg5"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc5" />
+
+                <TextView
+                    android:id="@+id/giftName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg5"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift V"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName5"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg5"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice5"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg5"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift6"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg6"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc6" />
+
+                <TextView
+                    android:id="@+id/giftName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg6"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift VI"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName6"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg6"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice6"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice6"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg6"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift7"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg7"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc7" />
+
+                <TextView
+                    android:id="@+id/giftName7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg7"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift VII"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName7"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg7"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice7"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice7"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg7"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift8"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg8"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc8" />
+
+                <TextView
+                    android:id="@+id/giftName8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg8"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift VIII"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName8"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice8"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg8"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift9"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg9"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc9" />
+
+                <TextView
+                    android:id="@+id/giftName9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg9"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift IX"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName9"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg9"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice9"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice9"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg9"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/gift10"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="30dp">
+
+                <ImageView
+                    android:layout_width="145dp"
+                    android:layout_height="145dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/square_bg" />
+
+                <ImageView
+                    android:id="@+id/giftImg10"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="27.5dp"
+                    android:src="@drawable/pc10" />
+
+                <TextView
+                    android:id="@+id/giftName10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/name_gift_margin"
+                    android:layout_toRightOf="@id/giftImg10"
+                    android:fontFamily="sans-serif"
+                    android:text="Gift X"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+                <TextView
+                    android:id="@+id/realgiftPrice10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/giftName10"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="@dimen/real_price_margin_top"
+                    android:layout_toRightOf="@id/giftImg10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="$0.00"
+                    android:textColor="#f15a24"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/originalgiftPrice10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@id/realgiftPrice10"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/realgiftPrice10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="bottom"
+                    android:text="($2.00)"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/toBuyBtn10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/name_gift_margin_bottom"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@id/giftImg10"
+                    android:src="@drawable/pick_button" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="#d6d6d6" />
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

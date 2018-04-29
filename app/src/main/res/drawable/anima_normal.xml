@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/verifying_01"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_02"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_03"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_04"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_05"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_06"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_07"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_08"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_09"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_10"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_11"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_12"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_13"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_14"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_15"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_16"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_17"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_18"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_19"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_20"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_21"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_22"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_23"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_24"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_25"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_26"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_27"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_28"  android:duration="40"/>
+    <item android:drawable="@drawable/verifying_29"  android:duration="40"/>
+</animation-list>

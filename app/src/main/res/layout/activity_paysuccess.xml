@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/surface_view"
+        android:layout_width="310dp"
+        android:layout_height="502dp"
+        android:layout_gravity="center"/>
+    <RelativeLayout
+        android:id="@+id/ll_dialog"
+        android:layout_width="320dp"
+        android:layout_height="512dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_corner">
+
+        <TextView
+            android:id="@+id/reviewTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Here's you choice"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <FrameLayout
+            android:id="@+id/piclayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reviewTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="21dp">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/square_bg" />
+
+            <ImageView
+                android:id="@+id/recomendImg"
+                android:layout_width="190dp"
+                android:layout_height="190dp"
+                android:layout_gravity="center"
+                android:src="@drawable/thumbnail_3" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/productNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/piclayout"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Holenlsn"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/orderTotalTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productNameTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Order total:  $639.20"
+            android:textColor="#f15a24"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/scanBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/pay_button" />
+        <ImageView
+            android:id="@+id/goHomeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/back_to_home_button"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/animationImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/anima_fail"
+            android:background="@drawable/gif_bg"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tipsTxt"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_below="@id/animationImg"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="@string/tips_normal"
+            android:textColor="#f15a24"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/cancleTxt"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Cancel"
+            android:textColor="#f15a24"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/close_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="405dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/button_close" />
+
+</FrameLayout>
